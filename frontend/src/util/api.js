@@ -10,10 +10,10 @@ export async function authenticate(mode, data) {
     let successMessage = "";
 
     if (mode === "signup") {
-      url = "https://christmas-app-xi.vercel.app/auth/signup";
+      url = "https://christmas-app-server.vercel.app/auth/signup";
       successMessage = "Sign Up successfully! \n Please now logged in!";
     } else if (mode === "login") {
-      url = "https://christmas-app-xi.vercel.app/auth/login";
+      url = "https://christmas-app-server.vercel.app/auth/login";
       successMessage = "Successfully logged in!";
     } else {
     }
@@ -58,7 +58,7 @@ export async function updateUserProfile(data) {
   try {
     const token = getToken();
     const response = await fetch(
-      "https://christmas-app-xi.vercel.app/profile",
+      "https://christmas-app-server.vercel.app/profile",
       {
         method: "PATCH",
         headers: {
@@ -85,7 +85,7 @@ export async function fetchUserProfile() {
       return redirect("/auth");
     }
     const response = await fetch(
-      "https://christmas-app-xi.vercel.app/profile",
+      "https://christmas-app-server.vercel.app/profile",
       {
         headers: { Authorization: "Bearer " + token },
       }
@@ -107,7 +107,7 @@ export async function fetchLevelInfo() {
       return redirect("/auth");
     }
     const response = await fetch(
-      "https://christmas-app-xi.vercel.app/game/level/info",
+      "https://christmas-app-server.vercel.app/game/level/info",
       {
         headers: {
           Authorization: "Bearer " + token,
@@ -131,7 +131,7 @@ export async function updateUserLevel(level) {
     const token = getToken();
     level++;
     const response = await fetch(
-      "https://christmas-app-xi.vercel.app/game/level",
+      "https://christmas-app-server.vercel.app/game/level",
       {
         method: "PATCH",
         headers: {
@@ -155,7 +155,7 @@ export async function checkUserProgress() {
   try {
     const token = getToken();
     const response = await fetch(
-      "https://christmas-app-xi.vercel.app/game/level",
+      "https://christmas-app-server.vercel.app/game/level",
       {
         headers: {
           Authorization: "Bearer " + token,
@@ -177,7 +177,7 @@ export async function fetchLevelData(level) {
   try {
     const token = getToken();
     const response = await fetch(
-      `https://christmas-app-xi.vercel.app/game/level/${level}`,
+      `https://christmas-app-server.vercel.app/game/level/${level}`,
       {
         headers: {
           Authorization: "Bearer " + token,
@@ -199,7 +199,7 @@ export async function checkResultGameLevel(level, data) {
   try {
     const token = getToken();
     const response = await fetch(
-      `https://christmas-app-xi.vercel.app/game/level/${level}`,
+      `https://christmas-app-server.vercel.app/game/level/${level}`,
       {
         method: "POST",
         headers: {
