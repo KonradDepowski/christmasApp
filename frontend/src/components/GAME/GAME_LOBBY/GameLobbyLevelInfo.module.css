@@ -1,0 +1,54 @@
+.modal_game_level_info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13rem;
+  width: 22rem;
+  background: linear-gradient(
+    to right,
+    rgba(58, 96, 115, 0.9),
+    rgba(58, 123, 213, 0.9)
+  );
+  z-index: 1;
+  border-radius: 5rem;
+  z-index: 11;
+  overflow-y: hidden;
+}
+
+.modal_game_level_info h2 {
+  font-size: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
+  color: white;
+}
+
+.modal_game_level_info p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.modal_game_level_info a {
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgba(5, 105, 246, 0.6);
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal_game_level_info a:hover,
+.modal_game_level_info a:focus {
+  background-color: rgba(1, 87, 207, 0.6);
+}
+
+.modal_game_level_info .loading {
+  font-size: 1.5rem;
+  color: white;
+  padding: 2rem 0;
+}

@@ -1,0 +1,88 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 30%;
+  background-color: var(--white-500);
+  border-radius: 1rem;
+  box-shadow: 3px 3px 3px black;
+  z-index: 5;
+}
+
+.modal span {
+  font-size: 2.5rem;
+}
+
+.icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 10rem;
+  padding: 0.7rem;
+  border: none;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.button {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--green-500);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover,
+.button:focus {
+  background-color: #347d73;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    max-width: 45rem;
+    max-height: 30rem;
+  }
+
+  .modal span {
+    font-size: 2.8rem;
+  }
+
+  .icon {
+    font-size: 2.8rem;
+  }
+
+  .input {
+    padding: 1rem;
+  }
+
+  .button {
+    padding: 1.2rem 2.8rem;
+  }
+}
+
+@media ((orientation: landscape) and (max-width:1024px )) {
+  .modal {
+    min-height: 40%;
+  }
+}

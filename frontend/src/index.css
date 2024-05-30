@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --background-primary-gradient: linear-gradient(
+    to right,
+    #bdded4,
+    rgb(2, 97, 179)
+  );
+
+  --background-secondary-gradinet: linear-gradient(
+    to right,
+    rgba(58, 96, 115, 0.6),
+    rgba(58, 123, 213, 0.6)
+  );
+
+  --background-secondary-gradient-700: linear-gradient(
+    to right,
+    rgb(61, 99, 150),
+    rgba(3, 8, 50, 0.547)
+  );
+  --background-secondary-gradinet-linear: linear-gradient(
+    to right,
+    rgb(153, 202, 226),
+    rgb(109, 170, 255)
+  );
+  --background-level-gradient: linear-gradient(
+    to right,
+    rgb(0, 102, 157),
+    rgb(0, 11, 82)
+  );
+
+  --h1-xsm-size: 2.6rem;
+  --h1-sm-size: 3rem;
+  --h1-md-size: 3.5rem;
+  --h1-lg-size: 4rem;
+  --h1-xlg-size: 4.5rem;
+  --section-sm-height: calc(100vh - 8rem);
+  --section-xlg-height: calc(100vh - 10rem);
+  --color-red: #bc1c3f;
+  --error-200: rgb(255, 105, 105);
+  --white-500: #e8ecff;
+  --green-500: #4c9f94;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+body {
+  background: var(--background-primary-gradient);
+  min-height: 100vh;
+}

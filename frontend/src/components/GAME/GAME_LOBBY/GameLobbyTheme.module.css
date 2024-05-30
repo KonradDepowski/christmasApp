@@ -1,0 +1,130 @@
+.game_lobby_part_container {
+  display: flex;
+}
+
+.game_lobby_part {
+  position: relative;
+  width: 1300px;
+  height: 700px;
+  flex-shrink: 0;
+  animation: blur 0.3s ease-in both;
+}
+
+.game_lobby_part_disabled {
+  position: relative;
+  width: 1300px;
+  height: 700px;
+  flex-shrink: 0;
+  filter: blur(10px) brightness(0.5);
+  pointer-events: none;
+}
+
+.highlighted_level_wrap {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 14rem;
+  height: 25rem;
+  cursor: pointer;
+}
+
+.first {
+  top: 28rem;
+  left: 28rem;
+}
+
+.second {
+  position: absolute;
+  top: 8rem;
+  right: 27rem;
+}
+
+.third {
+  position: absolute;
+  bottom: 3rem;
+  left: 14rem;
+}
+
+.fourth {
+  position: absolute;
+  bottom: 8rem;
+  right: 35rem;
+  width: 16rem;
+  height: 22rem;
+}
+
+.highlighted_level_star {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  translate: -50%;
+  font-size: 3rem;
+  color: rgb(255, 157, 0);
+  animation: activeStar ease-in 1s infinite;
+}
+
+.second_star {
+  top: -5.5rem;
+}
+
+.third_star {
+  top: -5rem;
+}
+
+.highlighted_level {
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(0, 195, 255, 0.4);
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px 15px rgba(0, 195, 255, 0.3);
+}
+
+img {
+  width: 100%;
+}
+
+.level_info_first {
+  top: 12rem;
+  left: 23rem;
+}
+
+.level_info_second {
+  top: 35rem;
+  right: 23rem;
+}
+
+.level_info_third {
+  bottom: 33rem;
+  left: -4rem;
+}
+
+.level_info_fourth {
+  bottom: 30rem;
+  right: -4rem;
+}
+
+@media (min-width: 776px) {
+}
+
+@keyframes activeStar {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(10px) brightness(0.5);
+  }
+  100% {
+    filter: blur(0) brightness(1);
+  }
+}

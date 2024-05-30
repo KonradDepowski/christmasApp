@@ -1,0 +1,57 @@
+.game {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background: var(--background-primary-gradient);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100rem;
+  max-height: 70rem;
+}
+.game h1 {
+  font-size: clamp(2.5rem, 3vw, 6rem);
+  color: rgb(0, 5, 142);
+  text-shadow: 1px 1px 1px white;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.game p {
+  text-align: center;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  padding: 1rem 2rem;
+  padding-left: clamp(1.7rem, 3vw, 5rem);
+  padding-right: clamp(1.7rem, 3vw, 5rem);
+  color: rgb(0, 0, 0);
+}
+
+.img_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.game img {
+  width: 30%;
+  max-width: 20rem;
+}
+
+@media ((orientation: landscape) and (max-width:1024px )) {
+  .wrap {
+    transform: scale(0.7);
+  }
+}

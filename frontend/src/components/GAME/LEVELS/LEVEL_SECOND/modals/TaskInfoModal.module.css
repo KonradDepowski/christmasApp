@@ -1,0 +1,92 @@
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 30%;
+  min-height: 26rem;
+  max-width: 40rem;
+  max-height: 30rem;
+  background-color: var(--white-500);
+  border-radius: 1rem;
+  box-shadow: 3px 3px 3px black;
+  z-index: 5;
+}
+
+.modal .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.modal p {
+  font-size: 1.5rem;
+}
+
+.hint {
+  position: absolute;
+  right: 1rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 10rem;
+}
+
+.hint p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 20rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+.btn {
+  margin: 3rem 0 1rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--green-500);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #266c63;
+}

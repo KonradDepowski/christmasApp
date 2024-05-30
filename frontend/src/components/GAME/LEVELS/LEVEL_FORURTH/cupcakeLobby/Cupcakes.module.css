@@ -1,0 +1,68 @@
+.cupcakes {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 60%;
+  background-color: var(--green-500);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.cupcakes_wrap_first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow-x: hidden;
+  height: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cupcakes_wrap_second {
+  position: absolute;
+  top: 15rem;
+  left: 0;
+  display: flex;
+  overflow-x: hidden;
+  height: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.cupcakes_wrap_third {
+  position: absolute;
+  top: 30rem;
+  left: 0;
+  display: flex;
+  overflow-x: hidden;
+  height: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.img {
+  position: absolute;
+  left: 50%;
+  bottom: 0rem;
+  transform: translateX(-50%);
+  width: 20rem;
+  max-height: 25rem;
+}
+
+@media (orientation: landscape) {
+  .cupcakes {
+    min-height: 40rem;
+  }
+}
+
+.block {
+  width: 5rem;
+  height: 5rem;
+}

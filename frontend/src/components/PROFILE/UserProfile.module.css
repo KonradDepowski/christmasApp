@@ -1,0 +1,151 @@
+.userProfile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: var(--section-sm-height);
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.userProfile header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 2rem;
+  background: var(--background-secondary-gradient-700);
+  box-shadow: 1px 1px 1px #0f0c29;
+  padding: 2rem;
+  max-height: 80vh;
+  overflow: scroll;
+  margin: 0 auto;
+  scrollbar-width: none;
+}
+.userProfile header::-webkit-scrollbar {
+  display: none;
+}
+
+.userInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person_data .name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 0.2rem;
+}
+
+.person_data p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.userInfo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.btn_userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+  margin: 2rem auto;
+  color: rgb(247 255 136);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color.3s;
+}
+
+.btn_userProfile:hover {
+  color: rgb(175, 185, 43);
+}
+
+.btn_icon {
+  margin-top: 0.3rem;
+}
+
+
+@media (min-width: 576px) {
+  .person_data .name {
+    font-size: 3rem;
+  }
+
+  .person_data p {
+    font-size: 1.4rem;
+  }
+
+  .avatar {
+    width: 6rem;
+    height: 6rem;
+  }
+  .btn_userProfile {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .person_data .name {
+    font-size: 4rem;
+  }
+
+  .person_data p {
+    font-size: 1.5rem;
+  }
+
+  .avatar {
+    width: 8rem;
+    height: 8rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .userProfile header {
+    max-width: 90rem;
+    padding: 5rem;
+    border-radius: 5rem;
+    overflow: auto;
+  }
+
+  .person_data .name {
+    font-size: 4.5rem;
+  }
+
+  .person_data p {
+    font-size: 1.7rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .avatar {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .btn_userProfile {
+    font-size: 1.8rem;
+    padding: 5rem 0;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  .userProfile {
+    height: var(--section-xlg-height);
+  }
+}

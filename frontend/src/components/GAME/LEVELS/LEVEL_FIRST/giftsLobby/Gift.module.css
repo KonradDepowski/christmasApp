@@ -1,0 +1,28 @@
+.gift {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 6rem;
+  height: 6rem;
+  z-index: 1;
+  margin-right: 0.5rem;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gift:hover,
+.gift:focus {
+  filter: brightness(0.8) !important;
+}
+
+@media (min-width: 768px) {
+  .gift {
+    width: 8rem;
+    height: 8rem;
+  }
+}

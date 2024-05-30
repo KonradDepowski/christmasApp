@@ -1,0 +1,86 @@
+.levelInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 2rem;
+  background: var(--background-level-gradient);
+  padding: 3rem 0;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.levelInfo h2 {
+  padding: 2rem 2rem 1rem 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.levelInfo p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2rem;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.levelInfo button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.levelInfo button:nth-child(1) {
+  background-color: rgba(142, 215, 255, 0.7);
+}
+
+.levelInfo button:nth-child(1):hover {
+  background-color: rgb(41, 131, 180);
+}
+
+.levelInfo button:nth-child(2) {
+  background-color: rgba(252, 199, 199, 0.765);
+}
+
+.levelInfo button:nth-child(2):hover {
+  background-color: rgb(214, 106, 106);
+}
+
+@media (min-width: 992px) {
+  .levelInfo {
+    padding-top: 9rem;
+    width: 50rem;
+    height: 50rem;
+  }
+  .levelInfo h2 {
+    font-size: 4rem;
+  }
+
+  .levelInfo p {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .levelInfo button {
+    margin-top: 2rem;
+    padding: 1.2rem 1.8rem;
+    border: none;
+    font-size: 1.8rem;
+  }
+}

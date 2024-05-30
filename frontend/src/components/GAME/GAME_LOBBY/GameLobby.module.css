@@ -1,0 +1,32 @@
+.game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: rgb(120, 120, 120);
+  z-index: 1;
+}
+
+.game::-webkit-scrollbar {
+  display: none;
+}
+
+.quit_game {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 2rem;
+  left: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media (min-width: 776px) {
+  .quit_game {
+    font-size: 4rem;
+  }
+}
